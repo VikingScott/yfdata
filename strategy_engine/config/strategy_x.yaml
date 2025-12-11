@@ -1,0 +1,39 @@
+# Strategy Configuration Template
+
+strategy:
+  name: "Strategy X"
+  description: "Sample strategy configuration"
+  
+parameters:
+  # Trend detection parameters
+  trend:
+    fast_ma: 20
+    slow_ma: 63
+    
+  # Volatility regime parameters
+  volatility:
+    vol_window: 20
+    vol_threshold: 0.15
+    
+  # Portfolio parameters
+  portfolio:
+    max_leverage: 1.0
+    rebalance_frequency: "daily"  # daily, weekly, monthly
+    
+  # Risk management
+  risk:
+    max_drawdown: 0.20
+    stop_loss: 0.05
+
+# Asset universe
+assets:
+  - SPY
+  - QQQ
+  - IWM
+
+# Backtest parameters
+backtest:
+  start_date: "2023-01-01"
+  end_date: "2024-01-01"
+  initial_capital: 100000
+  commission: 0.001

@@ -1,0 +1,5 @@
+ticker,source,description
+SPY,yf,SPDR S&P 500 ETF Trust
+XLK,yf,Technology Select Sector SPDR Fund
+GLD,yf,SPDR Gold Shares
+TLT,yf,iShares 20+ Year Treasury Bond ETF
